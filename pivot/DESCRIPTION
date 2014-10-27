@@ -1,0 +1,10 @@
+Package: pivot
+Type: Package
+Title: Vowel formant extraction based on vowel trajectory dynamics
+Version: 1.0
+Date: 2014-10-27
+Author: Aaron Albin (with Wil Rankinen)
+Maintainer: Aaron Albin <usagi5886@hotmail.com>
+Description: This package implements the method for extracting measurements from vowels' formant tracks described in Albin & Rankinen (2014). Every formant point sampled within a vowel is considered as a possible "pivot" (i.e. turning point), with monophthongs modeled as having one pivot and diphthongs modeled as having two pivots. The optimal pivot for the vowel is then determined by fitting regression lines to the formant trajectory and comparing the goodness-of-fit of these lines to the raw formant data.
+License: GPL-3
+URL: https://github.com/usagi5886/pivot

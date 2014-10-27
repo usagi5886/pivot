@@ -1,0 +1,12 @@
+citHeader("Please cite using the following information (formatting as necessary):")
+
+bibentry(bibtype = "Article",
+         author = personList( person("Aaron", "Albin"),
+                              person("Wil", "Rankinen") ),
+         year = "2014",
+         title = "A \"pivot\" model for extracting formant measurements based on vowel trajectory dynamics",
+         journal = "Journal of the Acoustical Society of America",
+         volume = "136",
+         number = "4",
+         pages = "2082",
+         url = "https://github.com/usagi5886/pivot")
