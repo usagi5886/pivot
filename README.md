@@ -1,5 +1,5 @@
 <h1>R package 'pivot'</h1>
-<h2>Vowel formant extraction based on vowel trajectory dynamics</h2>
+<h2>Formant extraction based on vowel trajectory dynamics</h2>
 
 <p>by <a href="http://www.aaronalbin.com/">Aaron Albin</a> (with <a href="http://www.ling.rochester.edu/wilrankinen/">Wil Rankinen</a>)</p>
 
@@ -15,26 +15,24 @@
 </p>
 
 <h3>Installation:</h3>
-<ol>
-	<li>Click on the "Download ZIP" button on the right side of this page and save the .zip file somewhere on your computer.</li>
-	<li>Unzip the .zip file to somewhere convenient (e.g. your desktop).</li>
-	<ul>
-		<li>After this step, the .zip file is no longer needed and can be deleted.</li>
-	</ul>
-	<li>Open R.</li>
-	<ul>
-		<li>If you are running Windows, you must open R as an administrator. To do so, go to the icon for R on your start menu ('start screen' in Windows 8) or desktop, right-click it, and select "Run as administrator". Click "Yes" to the User Account Control window that pops up.</li>
-	</ul>
-	<li>Find the path to the 'pivot' folder inside the unzipped folder from step 2. (Crucially, you need to find the path to the folder named 'pivot' and <b>not</b> the higher-level folder named 'pivot-master'.) If you unzipped to your desktop in step 2, the path will be something like the following:</li>
-	<ul>
-		<li><u>For Windows</u>: "C:/Users/MyUsername/Desktop/pivot-master/pivot/"</li>
-		<li><u>For Mac</u>: "/Users/MyUsername/Desktop/pivot-master/pivot/"</li>
-	</ul>
-	<li>Run the following line of code, adjusting the path for the <i>pkgs</i> argument as needed so it points to path you determined in Step 4</li>
-	<ul>
-		<li><i>install.packages(pkgs="(path from Step 4)", repos=NULL, type="source")</i></li>
-	</ul>
-</ol>
+1. Click on the "Download ZIP" button on the right side of this page and save the .zip file somewhere on your computer.
+2. Unzip the .zip file to somewhere convenient (e.g. your desktop).
+<ul>
+	<li>After this step, the .zip file is no longer needed and can be deleted.</li>
+</ul>
+3. Open R.
+<ul>
+	<li>If you are running Windows, you must open R as an administrator. To do so, go to the icon for R on your start menu ('start screen' in Windows 8) or desktop, right-click it, and select "Run as administrator". Click "Yes" to the User Account Control window that pops up.</li>
+</ul>
+4. Find the path to the 'pivot' folder inside the unzipped folder from step 2. (Crucially, you need to find the path to the folder named 'pivot' and <b>not</b> the higher-level folder named 'pivot-master'.) If you unzipped to your desktop in step 2, the path will be something like the following:
+<ul>
+	<li><u>For Windows</u>: "C:/Users/MyUsername/Desktop/pivot-master/pivot/"</li>
+	<li><u>For Mac</u>: "/Users/MyUsername/Desktop/pivot-master/pivot/"</li>
+</ul>
+5. Run the following line of code, adjusting the path for the <i>pkgs</i> argument as needed so it points to path you determined in Step 4.
+<ul>
+	<li><i>install.packages(pkgs="(path from Step 4)", repos=NULL, type="source")</i></li>
+</ul>
 
 <p>If everything works correctly, you should see something like the following in the R console:</p>
 
