@@ -1,4 +1,4 @@
-<h1>R package 'pivot'</h1>
+<h1>R package 'pivot' (version 2.0)</h1>
 <h2>Formant extraction based on vowel trajectory dynamics</h2>
 
 <p>by <a href="http://www.aaronalbin.com/">Aaron Albin</a> (with <a href="http://www.ling.rochester.edu/wilrankinen/">Wil Rankinen</a>)</p>
@@ -8,6 +8,7 @@
 	This package implements the method for extracting measurements from the <a href="http://en.wikipedia.org/wiki/Formant">formant</a> tracks of vowels as described in <a href="http://scitation.aip.org/content/asa/journal/jasa/136/4/10.1121/1.4899475">Albin & Rankinen (2014)</a>.
 	Every formant point sampled within a vowel is considered as a possible "pivot" (i.e. turning point), with monophthongs modeled as having one pivot and diphthongs modeled as having two pivots.
 	The optimal pivot for the vowel is then determined by fitting regression lines to the formant trajectory and comparing the goodness-of-fit of these lines to the raw formant data.
+	In addition to formants, the package can also be applied to any one-dimensional time-series of acoustic measurements (F0, intensity, nasality, breathiness, etc.).
 </p>
 <p>
 	For further details about the method, see the poster presented at the 168th meeting of the Acoustical Society of America (Indianapolis, Indiana; 10/27/2014 ~ 10/31/2014) about the method.
@@ -52,8 +53,11 @@
 <h3>Usage</h3>
 <p>
 You can load this package as you would any other, e.g. by including <i>library("pivot")</i> at the top of your R script.
-Once loaded, the pivot analysis is performed by two functions - (singular) <i>pivot()</i> for the one-pivot/monophthong analysis and (plural) <i>pivots</i> for the two-pivot/diphthong analysis.
+Once loaded, the pivot analysis of formant data is performed by two functions - (singular) <i>pivot()</i> for the one-pivot/monophthong analysis and (plural) <i>pivots()</i> for the two-pivot/diphthong analysis.
+Both have two arguments - 'f1' and 'f2' - corresponding to the F1 and F2 tracks across the duration of a given vowel token.
+To analyze other one-dimensional acoustic data (F0, intensity, nasality, breathiness, etc.), simply provide the relevant vector as 'f1' and leave 'f2' unspecified.
 To read more about these functions (including several examples illustrating how to use them), type <i>help("pivot")</i> or <i>?pivot</i> at the R console.
+To go through all of these examples at once, run the command <i>example("pivot")</i>.
 </p>
 
 <h3>Please cite as:</h3>

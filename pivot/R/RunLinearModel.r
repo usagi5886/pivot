@@ -18,7 +18,7 @@
 # For details on the GNU General Public License, see: http://www.gnu.org/licenses/             #
 ################################################################################################
 
-RunLinearModel = function(Type, PivotCandidateIndex, PercentsAcross, nPoints, FormantVector, Weights=NULL){
+RunLinearModel = function(Type, PivotCandidateIndex, PercentsAcross, nPoints, FormantVector){
 # Note that 'Type' needs to be the exact character string "Left" or "Right".
 
 # Extract out the [x,y] coordinates for the pivot
@@ -33,9 +33,7 @@ if(Type=="Right"){ Filter = 1:nPoints > PivotCandidateIndex }
 X_Peripheral  = PercentsAcross[Filter]
 Y_Peripheral  = FormantVector[Filter]
 
-if( is.null( Weights) ){ BandwidthWeights=NULL }else{ BandwidthWeights = Weights[Filter] }
-
-LinearModel = lm( I(Y_Peripheral  - Y_Pivot) ~ I(X_Peripheral  - X_Pivot) + 0, weights=BandwidthWeights )
+LinearModel = lm( I(Y_Peripheral  - Y_Pivot) ~ I(X_Peripheral  - X_Pivot) + 0 )
 
 return(LinearModel)
 } # End definition of function 'RunLinearModel()'
