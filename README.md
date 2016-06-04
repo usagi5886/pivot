@@ -1,4 +1,4 @@
-<h1>R package 'pivot' (version 2.0)</h1>
+<h1>R package 'pivot' (version 3.0)</h1>
 <h2>Formant extraction based on vowel trajectory dynamics</h2>
 
 <p>by <a href="http://www.aaronalbin.com/">Aaron Albin</a> (with <a href="http://www.ling.rochester.edu/wilrankinen/">Wil Rankinen</a>)</p>
