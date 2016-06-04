@@ -16,7 +16,7 @@
 </p>
 
 <h3>Installation:</h3>
-1. Click on the "Download ZIP" button on the right side of this page and save the .zip file somewhere on your computer.
+1. Click on the green "Clone or download" button at the top of this page, then click "Download ZIP" on the bottom-right of the pop-up window. Save the .zip file somewhere on your computer.
 2. Unzip the .zip file to somewhere convenient (e.g. your desktop).
 <ul>
 	<li>After this step, the .zip file is no longer needed and can be deleted.</li>

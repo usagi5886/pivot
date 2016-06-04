@@ -1,7 +1,7 @@
 # InterpolationResiduals.r
 # Aaron Albin (with Wil Rankinen)
 
-# This function takes a pair of pivots and returns the residuals over the linear interpolation portion
+# This function takes a pair of pivots (in a diphthong/two-pivot analysis) and returns the residuals over the linear interpolation portion
 
 # Dependencies: None
 # Used in: FindBestPivots()

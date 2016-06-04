@@ -1,5 +1,8 @@
 NEWS in package 'pivot'
 
+3.0 06-04-2016
+    o	Added in support for F3 (i.e. three-dimensional analyses)
+
 2.0 01-18-2015
     o	Added in support for one-dimensional analyses (e.g. F0)
     o	(Temporarily) removed non-functional code for weighting regression fits
